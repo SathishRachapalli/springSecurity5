@@ -1,0 +1,32 @@
+--
+
+'UserDetails' (I)  -> User(C)  that stores username and password details.
+
+-------------------------------------------------------------------------------------------------
+
+-- if we wanted to create any roles , we can go for 
+
+GrantedAuthority(I)->SimpleGrantedAuthority(C)
+
+-------------------------------------------------------------------------------------------------
+--In this project we used the InMemoryUserDetailsManager(C) to store the user's credentials.
+--Generally it will store those details in HashMap data structure
+
+-------------------------------------------------------------------------------------------------
+
+	UserDetailsService(I)  -- Loaduserbyusername();
+			|
+			|
+-- UserDetailsManager (I)  
+			|
+			|
+			v
+	 1. InMemoryUserDetailsManager (C)
+	 2. JdbcUserDetailsManager  (C)		
+	 
+	 
+	 
+--------------------------------------------------------------------------------------------------
+	 
+
+
